@@ -8,5 +8,11 @@ namespace BT.Brume
     public class GameData_Board : ScriptableObject
     {
         public FloatVariable turnCounter;
+        public List<Land> landList;
+
+        public void AddLand(Land newLand)
+        {
+            landList.Add(newLand);
+        }
     }
 }

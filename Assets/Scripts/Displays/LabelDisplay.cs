@@ -8,12 +8,12 @@ namespace BT.Brume
     public class LabelDisplay : MonoBehaviour
     {
         public Text turnCounterText;
-        public GameData_Board gdBoard;
+        public BoardReference gdBoard;
 
         public void UpdateTurnCounter()
         {
             Debug.Log("Update turn counter.");
-            turnCounterText.text = "Turn: " + gdBoard.turnCounter.value.ToString();
+            turnCounterText.text = "Turn: " + gdBoard.value.turnCounter.value.ToString();
         }
     }
 }

@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f462762b97bc8429ce007dd80bd3b7, type: 3}
-  m_Name: Board
+  m_Script: {fileID: 11500000, guid: 3a37b8c5762a3dc41868c62fe764d7e2, type: 3}
+  m_Name: BoardReference
   m_EditorClassIdentifier: 
-  turnCounter: {fileID: 11400000, guid: 070169fcb4ee85f4581a8f675bf8ea71, type: 2}
-  landList:
-  - {fileID: 0}
-  - {fileID: 0}
+  value: {fileID: 11400000, guid: 06371f13de0896441aef17dd89fb87e5, type: 2}

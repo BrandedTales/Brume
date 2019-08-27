@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f462762b97bc8429ce007dd80bd3b7, type: 3}
-  m_Name: Board
+  m_Script: {fileID: 11500000, guid: 6a0cdfd2460d3e148bdadf00239e9791, type: 3}
+  m_Name: CreateLand
   m_EditorClassIdentifier: 
-  turnCounter: {fileID: 11400000, guid: 070169fcb4ee85f4581a8f675bf8ea71, type: 2}
-  landList:
-  - {fileID: 0}
-  - {fileID: 0}
+  gdBoard: {fileID: 11400000, guid: d31d87f51533ecd40afcddb7f73efbb7, type: 2}
+  world: {fileID: 11400000, guid: 49c675726041d9147b19f40bc7efb019, type: 2}

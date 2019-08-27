@@ -6,11 +6,12 @@ namespace BT.Brume
 {
     public class TurnManager : MonoBehaviour
     {
-        [SerializeField] GameData_Board gdBoard;
+        [SerializeField] BoardReference gdBoard;
 
         public void EndTurn()
         {
-            gdBoard.turnCounter.value++;
+            gdBoard.value.turnCounter.value++;
+            FindObjectOfType<LandManager>().CreateLand();
         }
     }
 }

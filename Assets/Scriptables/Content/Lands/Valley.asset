@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f462762b97bc8429ce007dd80bd3b7, type: 3}
-  m_Name: Board
+  m_Script: {fileID: 11500000, guid: da0606fdb9026294592e41b39a3dbd03, type: 3}
+  m_Name: Valley
   m_EditorClassIdentifier: 
-  turnCounter: {fileID: 11400000, guid: 070169fcb4ee85f4581a8f675bf8ea71, type: 2}
-  landList:
-  - {fileID: 0}
-  - {fileID: 0}
+  artwork: {fileID: 11400000, guid: ea2c2c2b60d46c2418a5e7fe96661693, type: 2}
+  flavor: {fileID: 11400000, guid: c3541eb1647a08649b520d4fc0d9bd33, type: 2}

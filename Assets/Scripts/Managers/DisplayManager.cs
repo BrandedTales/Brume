@@ -6,6 +6,8 @@ namespace BT.Brume
 {
     public class DisplayManager : MonoBehaviour
     {
+        [SerializeField] BoardReference gdBoard;
+
         ResourceDisplay resourceDisplay;
         LabelDisplay labelDisplay;
 
@@ -24,5 +26,15 @@ namespace BT.Brume
             if (labelDisplay != null) labelDisplay.UpdateTurnCounter();
             if (resourceDisplay != null) resourceDisplay.RefreshResources();
         }
+
+        private void GenerateLands()
+        {
+            foreach (Land land in gdBoard.value.landList)
+            {
+                Debug.Log("Generating display!");
+                GetComponent<LandDisplay>().GenerateDisplay();
+            }
+        }
+
     }
 }
