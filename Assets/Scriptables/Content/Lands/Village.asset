@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artwork: {fileID: 11400000, guid: 62b689c3bd86c8041921ff53a836f86f, type: 2}
   flavor: {fileID: 11400000, guid: ef7308947ecbfa843a6c7fd03aa7eff3, type: 2}
+  income:
+  - {fileID: 11400000, guid: 474e7654ffae7ff46b38d2e684ab4662, type: 2}
+  - {fileID: 11400000, guid: f2fc15f0f4ecd7444a1ac94f84983fe2, type: 2}

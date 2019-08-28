@@ -15,8 +15,6 @@ namespace BT.Brume
             if (curLand != null) Debug.Log("Do we initialize?");
             curLand.InitializeLand(world.RandomLand());
             curLand.transform.SetParent(GameObject.FindGameObjectWithTag("LandPanel").transform, false);
-            gdBoard.value.AddLand(curLand);
-
 
         }
     }

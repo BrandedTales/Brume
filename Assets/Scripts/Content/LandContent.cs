@@ -9,5 +9,7 @@ namespace BT.Brume
     {
         public ArtworkVariable artwork;
         public FlavorVariable flavor;
+
+        public Income[] income;      
     }
 }

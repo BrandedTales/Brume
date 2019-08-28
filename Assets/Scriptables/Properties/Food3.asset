@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a37b8c5762a3dc41868c62fe764d7e2, type: 3}
-  m_Name: BoardReference
+  m_Script: {fileID: 11500000, guid: d42701980c3821541aab9138ebefbb25, type: 3}
+  m_Name: Food3
   m_EditorClassIdentifier: 
-  value: {fileID: 11400000, guid: 05cebf3fd6cd31a4988904ee215e3fc8, type: 2}
+  resource: {fileID: 11400000, guid: cda6ac34cb0bba046a36ec7ac601ae6d, type: 2}
+  income: 3

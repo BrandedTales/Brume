@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gdBoard: {fileID: 11400000, guid: d31d87f51533ecd40afcddb7f73efbb7, type: 2}
+  gdLandList: {fileID: 11400000, guid: 7655f090d2497db448e1e4c1407eac28, type: 2}
 --- !u!114 &4154519066741263151
 MonoBehaviour:
   m_ObjectHideFlags: 0
