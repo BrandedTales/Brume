@@ -9,10 +9,11 @@ namespace BT.Brume
     {
         public override void Execute(Land land)
         {
+            
             land.isActive = !land.isActive;
 
             //Not sure that this belongs here.  Need a way to instantiate the active status so display can monitor it.
-            land.GetComponent<LandDisplay>().UpdateIncome();  
+            land.GetComponent<LandDisplay>().UpdateIncome();
         }
     }
 }

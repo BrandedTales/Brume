@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace BT.Brume
 {
-    public class Land : MonoBehaviour, IPointerClickHandler
+    public class Land : MonoBehaviour
     {
         public bool isActive;
 
@@ -33,13 +33,15 @@ namespace BT.Brume
             landList.Add(this);
         }
 
-        public void OnPointerClick(PointerEventData eventData)
+        public void LandClick(BaseEventData eventData)
         {
-            if (eventData.button == PointerEventData.InputButton.Left) LeftClick();
-            if (eventData.button == PointerEventData.InputButton.Right) RightClick();
+            PointerEventData pointerData = eventData as PointerEventData;
+
+            if (pointerData.button == PointerEventData.InputButton.Left) LeftClick();
+            if (pointerData.button == PointerEventData.InputButton.Right) RightClick();
         }
 
-        private void LeftClick()
+        public void LeftClick()
         {
             leftClick.Execute(this);
         }

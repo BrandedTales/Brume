@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3300485483543253101}
   - component: {fileID: 3300485483543253097}
   - component: {fileID: 3300485483543253102}
+  - component: {fileID: 2726596536097341742}
   m_Layer: 0
   m_Name: Land
   m_TagString: Untagged
@@ -137,6 +138,36 @@ MonoBehaviour:
   cardBack: {fileID: 21300000, guid: dfbe06b41ca8fe34d93337d618dbe156, type: 3}
   resourcePrefab: {fileID: 6758918433777251129, guid: 9b5b73a8971fb6846b556d6ecc5fb9c8,
     type: 3}
+--- !u!114 &2726596536097341742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300485483543253103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3300485483543253097}
+          m_MethodName: LandClick
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &3300485484767187448
 GameObject:
   m_ObjectHideFlags: 0

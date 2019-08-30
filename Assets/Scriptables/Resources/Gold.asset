@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Gold
   m_EditorClassIdentifier: 
   artwork: {fileID: 21300000, guid: 4bfee617cc44e474dae9cc29dd772476, type: 3}
-  value: 0
+  value: 10

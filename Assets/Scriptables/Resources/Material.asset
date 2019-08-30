@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Material
   m_EditorClassIdentifier: 
   artwork: {fileID: 21300000, guid: 60ccd2f3974e94244b4b78b5b4bcbf3a, type: 3}
-  value: 0
+  value: 10

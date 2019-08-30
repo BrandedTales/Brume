@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace BT.Brume
     {
         [SerializeField] BoardReference gdBoard;
         [SerializeField] GameData_LandList gdLandList;
+        [SerializeField] GameData_HeroList gdHeroList;
 
         ResourceDisplay resourceDisplay;
         LabelDisplay labelDisplay;
@@ -29,13 +31,21 @@ namespace BT.Brume
             if (labelDisplay != null) labelDisplay.UpdateTurnCounter();
             if (resourceDisplay != null) resourceDisplay.RefreshResources();
             if (gdLandList.Items.Count > 0) GenerateLands();
+            if (gdHeroList.Items.Count > 0) GenerateHeroes();
+        }
+
+        private void GenerateHeroes()
+        {
+            foreach (Hero hero in gdHeroList.Items)
+            {
+                hero.GetComponent<HeroDisplay>().GenerateDisplay();
+            }
         }
 
         private void GenerateLands()
         {
             foreach (Land land in gdLandList.Items)
             {
-                Debug.Log("Generating display!" + gdLandList.Items.Count);
 
                 land.GetComponent<LandDisplay>().GenerateDisplay();
                 land.GetComponent<LandDisplay>().UpdateIncome();

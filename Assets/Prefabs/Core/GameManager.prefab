@@ -44,10 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f381c8d999a20cb44bc0b945d39f1a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resources:
-  - {fileID: 11400000, guid: cda6ac34cb0bba046a36ec7ac601ae6d, type: 2}
-  - {fileID: 11400000, guid: 98111487f9244f6429bd45ea04ebaf29, type: 2}
-  - {fileID: 11400000, guid: 76c107a9789d2ab4697e6ec9ec298df8, type: 2}
+  resources: {fileID: 11400000, guid: 387b32d5d3af21e45b46493de37dccf9, type: 2}
   resourcePrefab: {fileID: 6615087204125686937, guid: 21888344cd0728d47906d5046ec669c8,
     type: 3}
 --- !u!114 &4154519065574273345
@@ -76,6 +73,7 @@ GameObject:
   - component: {fileID: 4154519066741263145}
   - component: {fileID: 4154519066741263151}
   - component: {fileID: 1926919323}
+  - component: {fileID: 528662890}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -112,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gdBoard: {fileID: 11400000, guid: d31d87f51533ecd40afcddb7f73efbb7, type: 2}
   gdLandList: {fileID: 11400000, guid: 7655f090d2497db448e1e4c1407eac28, type: 2}
+  gdHeroList: {fileID: 11400000, guid: e82db71d5f72372469ad0feb80585319, type: 2}
 --- !u!114 &4154519066741263151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gdBoard: {fileID: 11400000, guid: d31d87f51533ecd40afcddb7f73efbb7, type: 2}
+  gdLandList: {fileID: 11400000, guid: 7655f090d2497db448e1e4c1407eac28, type: 2}
+  gdResources: {fileID: 0}
 --- !u!114 &1926919323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,4 +142,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6bfe5e3ab0e6d024990d486e9cd23d42, type: 2}
   world: {fileID: 11400000, guid: 49c675726041d9147b19f40bc7efb019, type: 2}
   landPrefab: {fileID: 3300485483543253097, guid: 39fd06e58ece05441a9b9b404d199ab8,
+    type: 3}
+--- !u!114 &528662890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4154519066741263144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201fc05d5e129414799dd8f3b10497d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: 6e710a6f6bb90974a81dd3dc41b0dbb3, type: 2}
+  people: {fileID: 11400000, guid: dfbfc5e80c88be04b910e0635dbb6da1, type: 2}
+  heroPrefab: {fileID: 2721616726320888468, guid: 469306abee7d010499904c24f6bc60ae,
     type: 3}

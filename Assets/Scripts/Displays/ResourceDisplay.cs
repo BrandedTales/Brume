@@ -7,12 +7,12 @@ namespace BT.Brume
 {
     public class ResourceDisplay : MonoBehaviour
     {
-        [SerializeField] List<Resource> resources;
+        [SerializeField] GameData_Resources resources;
         [SerializeField] GameObject resourcePrefab;
 
         public void CreateResources()
         {
-            foreach (Resource r in resources)
+            foreach (Resource r in resources.resources)
             {
                 GameObject newResource = Instantiate(resourcePrefab, GameObject.Find("ResourcePanel").transform);
                 if (newResource == null)
@@ -27,7 +27,7 @@ namespace BT.Brume
         }
         public void RefreshResources()
         {
-            foreach (Resource r in resources)
+            foreach (Resource r in resources.resources)
             {
                 GameObject.Find(r.name).GetComponentInChildren<Text>().text = r.value.ToString();
             }

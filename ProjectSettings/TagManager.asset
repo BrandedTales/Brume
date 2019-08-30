@@ -6,6 +6,8 @@ TagManager:
   tags:
   - LandPanel
   - LandResourcePanel
+  - LabelBack
+  - HeroPanel
   layers:
   - Default
   - TransparentFX
