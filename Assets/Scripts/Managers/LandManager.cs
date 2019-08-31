@@ -22,5 +22,13 @@ namespace BT.Brume
                 }
             }
         }
+
+        public static void ConvertToToken(Hero hero, Land land)
+        {
+            hero.isDeployed = true;
+            hero.location = land;
+
+            
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace BT.Brume
 {
@@ -11,9 +11,12 @@ namespace BT.Brume
 
         public override void Invoke(Hero curHero)
         {
-            curHero.InitializeHero(people.RandomHero());
-            curHero.transform.SetParent(GameObject.FindGameObjectWithTag("HeroPanel").transform, false);
-
+            HeroContent hero = people.RandomHero();
+            if (hero != null)
+            {
+                curHero.InitializeHero(hero);
+                curHero.transform.SetParent(GameObject.FindGameObjectWithTag("HeroPanel").transform, false);
+            }
         }
     }
 }

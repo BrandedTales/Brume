@@ -12,7 +12,6 @@ namespace BT.Brume
 
         public void UpdateTurnCounter()
         {
-            Debug.Log("Update turn counter.");
             turnCounterText.text = "Turn: " + gdBoard.value.turnCounter.value.ToString();
         }
     }

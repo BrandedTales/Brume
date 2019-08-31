@@ -19,6 +19,7 @@ namespace BT.Brume
                 {
                     Hero newHero = Instantiate(heroPrefab);
                     ha.Invoke(newHero);
+
                 }
             }
         }
