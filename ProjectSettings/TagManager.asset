@@ -3,11 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - LandPanel
-  - LandResourcePanel
-  - LabelBack
-  - HeroPanel
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -45,12 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 1280613907
+  - name: Board
+    uniqueID: 4005800649
     locked: 0
   - name: Land
-    uniqueID: 4122863551
+    uniqueID: 1221960989
     locked: 0
-  - name: Piece
-    uniqueID: 3164534785
+  - name: People
+    uniqueID: 108878849
+    locked: 0
+  - name: Boost
+    uniqueID: 1684713009
     locked: 0

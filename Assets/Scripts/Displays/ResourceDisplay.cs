@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,30 +8,46 @@ namespace BT.Brume
 {
     public class ResourceDisplay : MonoBehaviour
     {
-        [SerializeField] GameData_Resources resources;
-        [SerializeField] GameObject resourcePrefab;
 
-        public void CreateResources()
+        public ResourcesReference resourceReference;
+        public GameObject resourceDisplayPrefab;
+
+        
+        void Start()
         {
-            foreach (Resource r in resources.resources)
+            foreach (ResourceVariable rv in resourceReference.resources)
             {
-                GameObject newResource = Instantiate(resourcePrefab, GameObject.Find("ResourcePanel").transform);
-                if (newResource == null)
+                AddResourceToPanel(rv);    
+            }
+            
+        }
+        // Update is called once per frame
+        private void Update()
+        {
+            foreach (ResourceVariable rv in resourceReference.resources)
+            {
+                foreach (Transform child in transform)
                 {
-                    Debug.Log("Huh.  Didn't see that coming.");
-                    return;
+                    if (child.gameObject.name == rv.name)
+                    {
+                        RefreshResourceValue(child.gameObject, rv);
+                        continue;
+                    }
                 }
-                newResource.name = r.name;
-                newResource.GetComponentInChildren<Image>().sprite = r.artwork;
-                newResource.GetComponentInChildren<Text>().text = r.value.ToString();
             }
         }
-        public void RefreshResources()
+
+        private void AddResourceToPanel(ResourceVariable resourceVariable)
         {
-            foreach (Resource r in resources.resources)
-            {
-                GameObject.Find(r.name).GetComponentInChildren<Text>().text = r.value.ToString();
-            }
+            GameObject resourceObject = GameObject.Instantiate(resourceDisplayPrefab, this.transform);
+            resourceObject.name = resourceVariable.name;
+            resourceObject.GetComponentInChildren<Image>().sprite = resourceVariable.sprite;
+            resourceObject.GetComponentInChildren<Text>().text = resourceVariable.value.ToString();
+        }
+
+        private void RefreshResourceValue(GameObject resourceDisplay, ResourceVariable resourceVariable)
+        {
+            resourceDisplay.GetComponentInChildren<Text>().text = resourceVariable.value.ToString();
         }
     }
 }
