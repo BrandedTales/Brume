@@ -7,7 +7,7 @@ namespace BT.Brume
 {
     public class GameManager : MonoBehaviour
     {
-        public List<GameAction> gameSetupActions;
+
         public List<GameAction> endTurnActions;
        
         public ContentInitialize newGame;
@@ -20,12 +20,7 @@ namespace BT.Brume
 
         private void InitializeGame()
         {
-            GameData data = new GameData(newGame);
-            foreach (GameAction a in gameSetupActions)
-            {
-                a.Execute(data);
-            }
-
+            newGame.InitializeGame();
         }
 
         public void NextTurn()

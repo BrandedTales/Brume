@@ -9,20 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8151c969011e844eaadfb50359d5af4, type: 3}
-  m_Name: Content Initialize
+  m_Script: {fileID: 11500000, guid: 5a8ded4d96b3c67468c6a9cc9bd53e32, type: 3}
+  m_Name: HeroIndex
   m_EditorClassIdentifier: 
-  turnValue: 0
-  gameSetupActions:
-  - {fileID: 11400000, guid: d72c9d1592d907f40906c6f2c12d0bcf, type: 2}
-  - {fileID: 11400000, guid: 9dbeb3de90a334e4b96875738212fe2c, type: 2}
-  - {fileID: 11400000, guid: a8e932bff1e79d947b4585a1aa2c4212, type: 2}
-  - {fileID: 11400000, guid: eb80a86b6f4167e4ab8b0d832a12a4f3, type: 2}
-  - {fileID: 11400000, guid: a404b227c5df3cd48b8b2745695ae7ab, type: 2}
-  heroList:
+  heroContentList:
   - {fileID: 11400000, guid: 6688cda8391232641a8580f107128921, type: 2}
   - {fileID: 11400000, guid: b60c641bdaaae8a42a1e61d0359ece04, type: 2}
   - {fileID: 11400000, guid: 0568653d0c75395488b8312a4ba8386d, type: 2}
   - {fileID: 11400000, guid: 8686e117c9b3c7b459fe1b6f72bfd35d, type: 2}
   - {fileID: 11400000, guid: 037f8b7f80ba52f4b969d3d6eea055e6, type: 2}
-  heroIndex: {fileID: 11400000, guid: 648effbeaad4c4044bdd03f25c22c776, type: 2}

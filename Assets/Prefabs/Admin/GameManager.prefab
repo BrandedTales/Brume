@@ -43,12 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13947a8af27528848ad59f3450d184d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSetupActions:
-  - {fileID: 11400000, guid: d72c9d1592d907f40906c6f2c12d0bcf, type: 2}
-  - {fileID: 11400000, guid: 9dbeb3de90a334e4b96875738212fe2c, type: 2}
-  - {fileID: 11400000, guid: a8e932bff1e79d947b4585a1aa2c4212, type: 2}
-  - {fileID: 11400000, guid: eb80a86b6f4167e4ab8b0d832a12a4f3, type: 2}
   endTurnActions:
   - {fileID: 11400000, guid: 5c9437e2666502c4ab478858dca00fd9, type: 2}
   - {fileID: 11400000, guid: c2df721afe6638d4d9a30172de20327d, type: 2}
+  - {fileID: 11400000, guid: a404b227c5df3cd48b8b2745695ae7ab, type: 2}
   newGame: {fileID: 11400000, guid: 8dbb96d284281f64282efba92bb9d419, type: 2}

@@ -11,6 +11,5 @@ namespace BT.Brume
         public SpriteVariable cardPortrait;
         public SpriteVariable token;
 
-
     }
 }

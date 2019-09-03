@@ -1,18 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class CardDisplay : MonoBehaviour
+namespace BT.Brume
 {
-    // Start is called before the first frame update
-    void Start()
+    public class CardDisplay : MonoBehaviour
     {
-        
-    }
+        CardInstance myHero;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Start is called before the first frame update
+        void Start()
+        {
+            myHero = GetComponent<CardInstance>();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            GetComponentInChildren<Image>().sprite = myHero.pieceDetails.cardPortrait.value;
+            GetComponentInChildren<Text>().text = myHero.name;
+        }
     }
 }

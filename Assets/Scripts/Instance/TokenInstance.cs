@@ -4,8 +4,8 @@ using System.Collections;
 
 namespace BT.Brume
 {
-    public class PieceInstance : MonoBehaviour
+    public class TokenInstance : MonoBehaviour
     {
-
+        public Piece pieceDetails;
     }
 }

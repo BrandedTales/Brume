@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329472ac110d1d6448b21d05587a45fd, type: 3}
+  m_Name: Velvet
+  m_EditorClassIdentifier: 
+  flavor: {fileID: 11400000, guid: 592399aa103b658439cd625b9949eb95, type: 2}
+  cardPortrait: {fileID: 11400000, guid: 81486b0599a0a5f40abf6b813b868268, type: 2}
+  tokenArt: {fileID: 11400000, guid: 3b3113f2146ed90419ded9fd861506d8, type: 2}
+  gameProperties: []
