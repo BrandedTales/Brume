@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8a62bb2b8e3a747b9a4b3c27c23374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardBack: {fileID: 11400000, guid: db81e79ff460f8a4aa84652c36d2e46f, type: 2}
 --- !u!114 &1783944697003869480
 MonoBehaviour:
   m_ObjectHideFlags: 0

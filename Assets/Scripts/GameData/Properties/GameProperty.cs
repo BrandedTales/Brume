@@ -5,7 +5,7 @@ using System.Collections;
 namespace BT.Brume
 {
     [CreateAssetMenu(menuName ="Brume/Reference/Property")]
-    public abstract class GameProperty : ScriptableObject 
+    public class GameProperty : ScriptableObject 
     {
         public enum ActionUse { EndTurn, MenuOption, LeftClick, OnSpawn }
 

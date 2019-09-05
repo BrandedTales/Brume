@@ -7,19 +7,27 @@ namespace BT.Brume
 {
     public class CardDisplay : MonoBehaviour
     {
-        CardInstance myHero;
+        CardInstance myCard;
+        public SpriteVariable cardBack;
 
         // Start is called before the first frame update
         void Start()
         {
-            myHero = GetComponent<CardInstance>();
+            myCard = GetComponent<CardInstance>();
         }
 
         // Update is called once per frame
         void Update()
         {
-            GetComponentInChildren<Image>().sprite = myHero.pieceDetails.cardPortrait.value;
-            GetComponentInChildren<Text>().text = myHero.name;
+            if (myCard.pieceDetails.isActive)
+            {
+                GetComponentInChildren<Image>().sprite = myCard.pieceDetails.cardPortrait.value;
+                GetComponentInChildren<Text>().text = myCard.name;
+            }
+            else
+            {
+                GetComponentInChildren<Image>().sprite = cardBack.value;
+            }
         }
     }
 }

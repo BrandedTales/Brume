@@ -24,7 +24,8 @@ namespace BT.Brume
 
                 var hero = ScriptableObject.CreateInstance<Hero>();
                 hero.InitializePiece(heroContent);
-
+                hero.isActive = true;
+                
                 newCard.GetComponent<CardInstance>().pieceDetails = hero;
             }
         }

@@ -1,19 +1,17 @@
-﻿using System.Collections;
+﻿using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace BT.Brume
 {
-    public abstract class Piece : ScriptableObject
+    [CreateAssetMenu(menuName = "Brume/Content/Land")]
+    public class LandContent : ScriptableObject
     {
         public StringVariable flavor;
-
-        public bool isActive;
-
         public SpriteVariable cardPortrait;
-        public SpriteVariable token;
-
+        public bool isUnique;
+        
         public List<GameProperty> gameProperties;
+
 
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace BT.Brume
 {
-    [CreateAssetMenu(menuName ="Brume/Indices/Heroes")]
+    [CreateAssetMenu(menuName ="Brume/Indices/Hero Index")]
     public class HeroIndex : ScriptableObject
     {
         public List<HeroContent> heroContentList;

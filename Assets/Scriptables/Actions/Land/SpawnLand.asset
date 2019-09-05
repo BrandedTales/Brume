@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aeb665e158762f408b85849f3dc819b, type: 3}
+  m_Name: SpawnLand
+  m_EditorClassIdentifier: 
+  landIndex: {fileID: 11400000, guid: 4cd7fa9fbfae1c940a5e6c38c0873eb2, type: 2}
+  landList: {fileID: 11400000, guid: 605138350dbad9943a4b32ae725310ed, type: 2}
+  cardPrefab: {fileID: 6219944234529219793, guid: 346a7c5bbf5d90444adb87e64de95792,
+    type: 3}

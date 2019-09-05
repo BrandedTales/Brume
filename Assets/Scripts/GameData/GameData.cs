@@ -10,6 +10,8 @@ namespace BT.Brume
         //Current turn.
         public int turnValue;
 
+        public Land currentLand;
+
         public GameData(ContentInitialize ct)
         {
             turnValue = ct.turnValue;

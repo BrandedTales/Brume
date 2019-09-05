@@ -15,11 +15,22 @@ namespace BT.Brume
         public List<HeroContent> heroList;
         public HeroIndex heroIndex;
 
+        public List<LandContent> landList;
+        public LandIndex landIndex;
+
+        public LandList realTimeLandList;
+
         public void InitializeGame()
         {
             ResetIndices();
             RunActions();
+            RunTimeData();
 
+        }
+
+        private void RunTimeData()
+        {
+            realTimeLandList.Items.Clear();  //Ultimately could be changed to reflect whatever the current game state is...
         }
 
         private void ResetIndices()
@@ -29,6 +40,13 @@ namespace BT.Brume
             {
                 heroIndex.heroContentList.Add(hc);
             }
+
+            landIndex.landContentList.Clear();
+            foreach (LandContent lc in landList)
+            {
+                landIndex.landContentList.Add(lc);
+            }
+
         }
 
         private void RunActions()

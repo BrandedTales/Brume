@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c652f328fddb3c04cb82d45cebd14834, type: 3}
+  m_Name: Valley
+  m_EditorClassIdentifier: 
+  flavor: {fileID: 11400000, guid: dd31fcfadf4d6ca4bb9a41bc7a418aaa, type: 2}
+  cardPortrait: {fileID: 11400000, guid: ac63a26afae09374e8599f8a62eb14aa, type: 2}
+  isUnique: 0
+  gameProperties: []

@@ -47,4 +47,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c9437e2666502c4ab478858dca00fd9, type: 2}
   - {fileID: 11400000, guid: c2df721afe6638d4d9a30172de20327d, type: 2}
   - {fileID: 11400000, guid: a404b227c5df3cd48b8b2745695ae7ab, type: 2}
+  - {fileID: 11400000, guid: b4bec7946c000bf45a1e53db9c101bd9, type: 2}
   newGame: {fileID: 11400000, guid: 8dbb96d284281f64282efba92bb9d419, type: 2}
