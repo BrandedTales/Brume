@@ -16,5 +16,13 @@ namespace BT.Brume
         {
             turnValue = ct.turnValue;
         }
+
+        public GameData(Piece piece)
+        {
+            if (piece is Land)
+            {
+                currentLand = piece as Land;
+            }
+        }
     }
 }

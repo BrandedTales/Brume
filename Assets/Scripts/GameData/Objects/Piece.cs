@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace BT.Brume
 {
@@ -14,6 +15,9 @@ namespace BT.Brume
         public SpriteVariable token;
 
         public List<GameProperty> gameProperties;
+
+        public GameAction leftClick;
+
 
     }
 }

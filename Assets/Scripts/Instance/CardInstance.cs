@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 
 namespace BT.Brume
@@ -8,9 +9,17 @@ namespace BT.Brume
     {
         public Piece pieceDetails;
 
-        public void LeftClick()
+        public GameAction leftClick;
+
+        public void OnPointerUp(BaseEventData eventData)
         {
-            //pieceDetails.LeftClick();
+            PointerEventData pEventData = eventData as PointerEventData;
+            GameData currentData = new GameData(pieceDetails);
+
+            if (pEventData.button == PointerEventData.InputButton.Left)
+            {
+                leftClick.Execute(currentData);
+            }
         }
 
     }

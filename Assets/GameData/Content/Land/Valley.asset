@@ -15,4 +15,7 @@ MonoBehaviour:
   flavor: {fileID: 11400000, guid: dd31fcfadf4d6ca4bb9a41bc7a418aaa, type: 2}
   cardPortrait: {fileID: 11400000, guid: ac63a26afae09374e8599f8a62eb14aa, type: 2}
   isUnique: 0
-  gameProperties: []
+  gameProperties:
+  - {fileID: 11400000, guid: 727ff8f0eba80ad4c86f2b2305ee1ac0, type: 2}
+  - {fileID: 11400000, guid: 727ff8f0eba80ad4c86f2b2305ee1ac0, type: 2}
+  - {fileID: 11400000, guid: 727ff8f0eba80ad4c86f2b2305ee1ac0, type: 2}

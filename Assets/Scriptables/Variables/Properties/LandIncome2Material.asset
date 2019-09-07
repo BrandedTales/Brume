@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d6b8ef6bf9dcbb47affe4f519eff5b1, type: 3}
-  m_Name: LandIncome1Food
+  m_Name: LandIncome2Material
   m_EditorClassIdentifier: 
   actionUse: 0
-  gameAction: {fileID: 11400000, guid: c2df721afe6638d4d9a30172de20327d, type: 2}
+  gameAction: {fileID: 11400000, guid: 9a08bf82d40096d4fbb3f3e9a13e0c24, type: 2}
   displayPanel: ResourcePanel

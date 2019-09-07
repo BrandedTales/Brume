@@ -11,7 +11,7 @@ namespace BT.Brume
 
         public ActionUse actionUse;
         public GameAction gameAction;
-        bool isDisplayed;  //This is purely to make filtering easier.  Hardcoding is still necessary to create the display.
+        public string displayPanel;
         
     }
 }

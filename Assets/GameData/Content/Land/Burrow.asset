@@ -16,4 +16,4 @@ MonoBehaviour:
   cardPortrait: {fileID: 11400000, guid: 0c86d0d21444f684788f25fca48e8402, type: 2}
   isUnique: 0
   gameProperties:
-  - {fileID: 11400000, guid: 727ff8f0eba80ad4c86f2b2305ee1ac0, type: 2}
+  - {fileID: 11400000, guid: d7edf3927b5dc8a43ae487fc2e5f911b, type: 2}
