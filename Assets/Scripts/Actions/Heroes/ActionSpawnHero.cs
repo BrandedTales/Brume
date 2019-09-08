@@ -11,16 +11,17 @@ namespace BT.Brume
         public HeroIndex heroIndex;
         HeroContent heroContent;
 
-        public GameObject cardPrefab;
+        public CardInstance cardPrefab;
 
         public override void Execute(GameData data)
         {
             heroContent = heroIndex.RandomHero();
             if (heroContent != null)
             {
-                GameObject newCard = Instantiate(cardPrefab);
+                CardInstance newCard = Instantiate(cardPrefab);
                 newCard.transform.SetParent(GameObject.Find("HeroPanel").transform);  //Don't like this hard reference.
                 newCard.name = heroContent.name;
+                newCard.isDraggable = true;
 
                 var hero = ScriptableObject.CreateInstance<Hero>();
                 hero.InitializePiece(heroContent);

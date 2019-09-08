@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 350ffd68772ffc0438006ced59e3140c, type: 3}
-  m_Name: Spawn Hero
+  m_Script: {fileID: 11500000, guid: bfdb4a86f43403744a0cffe153f6dbad, type: 3}
+  m_Name: OpenNotes
   m_EditorClassIdentifier: 
-  heroIndex: {fileID: 11400000, guid: 648effbeaad4c4044bdd03f25c22c776, type: 2}
-  cardPrefab: {fileID: 1783944697003869480, guid: 346a7c5bbf5d90444adb87e64de95792,
+  notesPrefab: {fileID: 7057856938768841680, guid: 0f25d6c0ec95e5741a7f16f60eb62341,
     type: 3}

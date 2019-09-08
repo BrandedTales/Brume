@@ -12,16 +12,17 @@ namespace BT.Brume
         LandContent landContent;
         public LandList landList;
 
-        public GameObject cardPrefab;
+        public CardInstance cardPrefab;
 
         public override void Execute(GameData data)
         {
             landContent = landIndex.RandomLand();
             if (landContent != null)
             {
-                GameObject newCard = Instantiate(cardPrefab);
+                CardInstance newCard = Instantiate(cardPrefab);
                 newCard.transform.SetParent(GameObject.Find("LandPanel").transform);  //Don't like this hard reference.
                 newCard.name = landContent.name;
+                newCard.isDraggable = false;
 
                 var land = ScriptableObject.CreateInstance<Land>();
                 land.isRevealed = false;

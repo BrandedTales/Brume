@@ -10,6 +10,7 @@ namespace BT.Brume
         //Current turn.
         public int turnValue;
 
+        public Piece currentPiece;
         public Land currentLand;
 
         public GameData(ContentInitialize ct)
@@ -19,6 +20,8 @@ namespace BT.Brume
 
         public GameData(Piece piece)
         {
+            currentPiece = piece;
+
             if (piece is Land)
             {
                 currentLand = piece as Land;
