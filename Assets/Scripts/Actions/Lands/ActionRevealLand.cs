@@ -11,10 +11,14 @@ namespace BT.Brume
 
         public override void Execute(GameData data)
         {
-            if (data.currentLand != null)
+            if ((data.currentPiece != null) && (data.currentPiece is Land))
             {
-                data.currentLand.isRevealed = true;
-                data.currentLand.isActive = true;
+                Land land = data.currentPiece as Land;
+                land.isActive = true;
+                land.isRevealed = true;
+
+                data.currentPiece = land;
+
             }
         }
     }

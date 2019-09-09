@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.EventSystems;
-
+using System;
 
 namespace BT.Brume
 {
@@ -11,6 +11,7 @@ namespace BT.Brume
 
         public GameAction leftClick;
         public GameAction rightClick;
+        public GameAction endDrag;
 
         public bool isDraggable;
 
@@ -22,6 +23,45 @@ namespace BT.Brume
             {
                 transform.position = pointerEventData.position;
             }
+        }
+
+        public void OnEndDrag(BaseEventData eventData)
+        {
+            if (isDraggable)
+            {
+                PointerEventData pointerEventData = eventData as PointerEventData;
+
+                GameData currentData = new GameData(pieceDetails);
+                CardInstance dropLocation = null;
+
+                if (CheckOverLand(out dropLocation))
+                {
+                    currentData.cardOver = dropLocation;
+                    endDrag.Execute(currentData);
+                    Destroy(this.gameObject);
+                }
+            }
+        }
+
+        private bool CheckOverLand(out CardInstance newLoc)
+        {
+            PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
+            pointerEventData.position = Input.mousePosition;
+
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointerEventData, results);
+            Debug.Log(results.Count);
+            foreach (RaycastResult rr in results)
+            {
+                Debug.Log(rr.gameObject.transform.parent.gameObject.name);
+                if (rr.gameObject.transform.parent.gameObject.GetComponent<CardInstance>().pieceDetails is Land)
+                {
+                    newLoc = rr.gameObject.transform.parent.GetComponent<CardInstance>();
+                    return true;
+                }         
+            }
+            newLoc = null;
+            return false;
         }
 
         public void OnPointerUp(BaseEventData eventData)
